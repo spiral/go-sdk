@@ -28,7 +28,7 @@ import (
 	"time"
 
 	"github.com/uber-go/tally"
-	"go.temporal.io/api/serviceerror"
+	"github.com/spiral/go-api/serviceerror"
 )
 
 type (

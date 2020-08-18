@@ -31,9 +31,9 @@ import (
 
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gogo/protobuf/proto"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/internal/common/util"
+	"github.com/spiral/go-sdk/internal/common/util"
 )
 
 // ProtoJSONPayloadConverter converts proto objects to/from JSON.

@@ -31,12 +31,12 @@ package client
 import (
 	"context"
 
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	"go.temporal.io/api/workflowservice/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/internal"
 )
 
 const (

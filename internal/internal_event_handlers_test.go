@@ -28,10 +28,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/converter"
-	iconverter "go.temporal.io/sdk/internal/converter"
+	"github.com/spiral/go-sdk/converter"
+	iconverter "github.com/spiral/go-sdk/internal/converter"
 )
 
 func testDecodeValueHelper(t *testing.T, env *workflowEnvironmentImpl) {

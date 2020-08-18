@@ -28,9 +28,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/spiral/go-sdk/converter"
 )
 
 func TestHeaderWriter(t *testing.T) {

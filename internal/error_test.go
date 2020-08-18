@@ -31,14 +31,14 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	commandpb "go.temporal.io/api/command/v1"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	failurepb "go.temporal.io/api/failure/v1"
-	historypb "go.temporal.io/api/history/v1"
+	commandpb "github.com/spiral/go-api/command/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	failurepb "github.com/spiral/go-api/failure/v1"
+	historypb "github.com/spiral/go-api/history/v1"
 
-	"go.temporal.io/sdk/converter"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/spiral/go-sdk/converter"
+	ilog "github.com/spiral/go-sdk/internal/log"
 )
 
 const (

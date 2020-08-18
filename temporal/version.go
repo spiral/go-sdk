@@ -24,7 +24,7 @@
 
 package temporal
 
-import "go.temporal.io/sdk/internal"
+import "github.com/spiral/go-sdk/internal"
 
 // SDKVersion is a semver that represents the version of this Temporal SDK.
 // This represents API changes visible to Temporal SDK consumers, i.e. developers

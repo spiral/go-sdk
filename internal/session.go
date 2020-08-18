@@ -34,7 +34,7 @@ import (
 
 	"github.com/pborman/uuid"
 
-	"go.temporal.io/sdk/internal/common/backoff"
+	"github.com/spiral/go-sdk/internal/common/backoff"
 )
 
 type (

@@ -29,7 +29,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 )
 
 type testStruct struct {

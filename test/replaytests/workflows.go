@@ -28,8 +28,8 @@ import (
 	"context"
 	"time"
 
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/workflow"
+	"github.com/spiral/go-sdk/activity"
+	"github.com/spiral/go-sdk/workflow"
 )
 
 // Workflow1 test workflow

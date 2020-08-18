@@ -35,15 +35,15 @@ import (
 	"time"
 
 	"github.com/uber-go/tally"
-	commonpb "go.temporal.io/api/common/v1"
-	"go.temporal.io/api/serviceerror"
+	commonpb "github.com/spiral/go-api/common/v1"
+	"github.com/spiral/go-api/serviceerror"
 	"golang.org/x/time/rate"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/backoff"
-	"go.temporal.io/sdk/internal/common/metrics"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/internal/common/backoff"
+	"github.com/spiral/go-sdk/internal/common/metrics"
+	ilog "github.com/spiral/go-sdk/internal/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 const (

@@ -29,9 +29,9 @@ import (
 	"fmt"
 	"reflect"
 
-	commandpb "go.temporal.io/api/command/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	historypb "go.temporal.io/api/history/v1"
+	commandpb "github.com/spiral/go-api/command/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	historypb "github.com/spiral/go-api/history/v1"
 )
 
 func anyToString(d interface{}) string {

@@ -32,15 +32,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	enumspb "go.temporal.io/api/enums/v1"
-	"go.temporal.io/api/serviceerror"
-	"go.temporal.io/api/workflowservice/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	"github.com/spiral/go-api/serviceerror"
+	"github.com/spiral/go-api/workflowservice/v1"
 
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/internal/common"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/spiral/go-sdk/client"
+	"github.com/spiral/go-sdk/internal/common"
+	ilog "github.com/spiral/go-sdk/internal/log"
+	"github.com/spiral/go-sdk/worker"
+	"github.com/spiral/go-sdk/workflow"
 )
 
 type AsyncBindingsTestSuite struct {

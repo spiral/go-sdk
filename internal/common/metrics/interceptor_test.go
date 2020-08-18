@@ -32,7 +32,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/uber-go/tally"
-	"go.temporal.io/api/serviceerror"
+	"github.com/spiral/go-api/serviceerror"
 	"google.golang.org/grpc"
 )
 

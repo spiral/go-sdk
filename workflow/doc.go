@@ -46,7 +46,7 @@ the sole parameter it receives as part of its initialization as a parameter to t
 	import (
 		"time"
 
-		"go.temporal.io/sdk/workflow"
+		"github.com/spiral/go-sdk/workflow"
 	)
 
 	func init() {
@@ -485,7 +485,7 @@ The code below implements the unit tests for the SimpleWorkflow sample.
 		"github.com/stretchr/testify/mock"
 		"github.com/stretchr/testify/suite"
 
-		"go.temporal.io/sdk/testsuite"
+		"github.com/spiral/go-sdk/testsuite"
 	)
 
 	type UnitTestSuite struct {

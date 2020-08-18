@@ -25,7 +25,7 @@
 package log
 
 import (
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 // With returns Logger instance that prepend every log entry with keyvals. If logger implments WithLogger it is used, otherwise every log call will be intercepted.

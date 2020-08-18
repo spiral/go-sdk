@@ -27,10 +27,10 @@ package temporal
 import (
 	"errors"
 
-	enumspb "go.temporal.io/api/enums/v1"
-	"go.temporal.io/api/serviceerror"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	"github.com/spiral/go-api/serviceerror"
 
-	"go.temporal.io/sdk/internal"
+	"github.com/spiral/go-sdk/internal"
 )
 
 /*

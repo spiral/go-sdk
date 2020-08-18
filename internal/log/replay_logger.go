@@ -25,7 +25,7 @@
 package log
 
 import (
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 // ReplayLogger is Logger implementation that is aware of replay.

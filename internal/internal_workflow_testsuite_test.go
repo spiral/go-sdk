@@ -35,14 +35,14 @@ import (
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	"go.temporal.io/api/serviceerror"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	"github.com/spiral/go-api/serviceerror"
 	"go.uber.org/atomic"
 
-	"go.temporal.io/sdk/converter"
-	iconverter "go.temporal.io/sdk/internal/converter"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/spiral/go-sdk/converter"
+	iconverter "github.com/spiral/go-sdk/internal/converter"
+	ilog "github.com/spiral/go-sdk/internal/log"
 )
 
 type WorkflowTestSuiteUnitTest struct {

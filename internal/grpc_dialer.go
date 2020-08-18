@@ -29,11 +29,11 @@ import (
 
 	"github.com/gogo/status"
 	"github.com/uber-go/tally"
-	"go.temporal.io/api/serviceerror"
+	"github.com/spiral/go-api/serviceerror"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"go.temporal.io/sdk/internal/common/metrics"
+	"github.com/spiral/go-sdk/internal/common/metrics"
 )
 
 type (

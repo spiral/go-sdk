@@ -33,17 +33,17 @@ import (
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	historypb "go.temporal.io/api/history/v1"
-	"go.temporal.io/api/serviceerror"
-	"go.temporal.io/api/workflowservice/v1"
-	"go.temporal.io/api/workflowservicemock/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	historypb "github.com/spiral/go-api/history/v1"
+	"github.com/spiral/go-api/serviceerror"
+	"github.com/spiral/go-api/workflowservice/v1"
+	"github.com/spiral/go-api/workflowservicemock/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/common/serializer"
-	iconverter "go.temporal.io/sdk/internal/converter"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/internal/common/metrics"
+	"github.com/spiral/go-sdk/internal/common/serializer"
+	iconverter "github.com/spiral/go-sdk/internal/converter"
 )
 
 const (

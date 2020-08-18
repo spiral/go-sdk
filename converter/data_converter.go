@@ -25,7 +25,7 @@
 package converter
 
 import (
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 )
 
 type (

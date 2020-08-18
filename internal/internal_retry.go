@@ -30,9 +30,9 @@ import (
 	"context"
 	"time"
 
-	"go.temporal.io/api/serviceerror"
+	"github.com/spiral/go-api/serviceerror"
 
-	"go.temporal.io/sdk/internal/common/backoff"
+	"github.com/spiral/go-sdk/internal/common/backoff"
 )
 
 const (

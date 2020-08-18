@@ -28,9 +28,9 @@ import (
 	"fmt"
 	"reflect"
 
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/internal/common/util"
+	"github.com/spiral/go-sdk/internal/common/util"
 )
 
 // NilPayloadConverter doesn't set Data field in payload.

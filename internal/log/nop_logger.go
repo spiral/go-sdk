@@ -25,7 +25,7 @@
 package log
 
 import (
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 // NopLogger is Logger implementation that doesn't produce any logs.

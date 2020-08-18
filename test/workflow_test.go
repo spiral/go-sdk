@@ -31,13 +31,13 @@ import (
 	"strconv"
 	"time"
 
-	enumspb "go.temporal.io/api/enums/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/temporal"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/internal"
+	"github.com/spiral/go-sdk/temporal"
+	"github.com/spiral/go-sdk/worker"
+	"github.com/spiral/go-sdk/workflow"
 )
 
 const (

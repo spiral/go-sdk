@@ -33,14 +33,14 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/suite"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	namespacepb "go.temporal.io/api/namespace/v1"
-	"go.temporal.io/api/workflowservice/v1"
-	"go.temporal.io/api/workflowservicemock/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	namespacepb "github.com/spiral/go-api/namespace/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
+	"github.com/spiral/go-api/workflowservicemock/v1"
 
-	"go.temporal.io/sdk/converter"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/spiral/go-sdk/converter"
+	ilog "github.com/spiral/go-sdk/internal/log"
 )
 
 const (

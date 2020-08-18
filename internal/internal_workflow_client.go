@@ -34,20 +34,20 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/pborman/uuid"
+	"github.com/spiral/go-api/workflowservice/v1"
 	"github.com/uber-go/tally"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	historypb "go.temporal.io/api/history/v1"
-	querypb "go.temporal.io/api/query/v1"
-	"go.temporal.io/api/serviceerror"
-	taskqueuepb "go.temporal.io/api/taskqueue/v1"
-	"go.temporal.io/api/workflowservice/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	historypb "github.com/spiral/go-api/history/v1"
+	querypb "github.com/spiral/go-api/query/v1"
+	"github.com/spiral/go-api/serviceerror"
+	taskqueuepb "github.com/spiral/go-api/taskqueue/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/backoff"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/common/serializer"
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/internal/common/backoff"
+	"github.com/spiral/go-sdk/internal/common/metrics"
+	"github.com/spiral/go-sdk/internal/common/serializer"
+	"github.com/spiral/go-sdk/log"
 )
 
 // Assert that structs do indeed implement the interfaces

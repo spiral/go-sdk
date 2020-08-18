@@ -40,20 +40,20 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	historypb "go.temporal.io/api/history/v1"
-	namespacepb "go.temporal.io/api/namespace/v1"
-	"go.temporal.io/api/serviceerror"
-	taskqueuepb "go.temporal.io/api/taskqueue/v1"
-	"go.temporal.io/api/workflowservice/v1"
-	"go.temporal.io/api/workflowservicemock/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	historypb "github.com/spiral/go-api/history/v1"
+	namespacepb "github.com/spiral/go-api/namespace/v1"
+	"github.com/spiral/go-api/serviceerror"
+	taskqueuepb "github.com/spiral/go-api/taskqueue/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
+	"github.com/spiral/go-api/workflowservicemock/v1"
 	"google.golang.org/grpc"
 
-	"go.temporal.io/sdk/converter"
-	iconverter "go.temporal.io/sdk/internal/converter"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/converter"
+	iconverter "github.com/spiral/go-sdk/internal/converter"
+	ilog "github.com/spiral/go-sdk/internal/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 func testInternalWorkerRegister(r *registry) {
@@ -852,7 +852,7 @@ func (s *internalWorkerTestSuite) TestReplayWorkflowHistory_LocalActivity_Activi
 	result, _ := converter.GetDefaultDataConverter().ToPayloads("some-incorrect-result")
 	testEvents := []*historypb.HistoryEvent{
 		createTestEventWorkflowExecutionStarted(1, &historypb.WorkflowExecutionStartedEventAttributes{
-			WorkflowType: &commonpb.WorkflowType{Name: "go.temporal.io/sdk/internal.testReplayWorkflow"},
+			WorkflowType: &commonpb.WorkflowType{Name: "github.com/spiral/go-sdk/internal.testReplayWorkflow"},
 			TaskQueue:    &taskqueuepb.TaskQueue{Name: taskQueue},
 			Input:        testEncodeFunctionArgs(converter.GetDefaultDataConverter()),
 		}),

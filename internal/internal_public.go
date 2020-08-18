@@ -34,8 +34,8 @@ package internal
 import (
 	"time"
 
-	historypb "go.temporal.io/api/history/v1"
-	"go.temporal.io/api/workflowservice/v1"
+	historypb "github.com/spiral/go-api/history/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
 )
 
 type (

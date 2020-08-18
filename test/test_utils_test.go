@@ -32,11 +32,11 @@ import (
 	"strings"
 	"time"
 
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/workflow"
+	"github.com/spiral/go-sdk/client"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/workflow"
 )
 
 type (

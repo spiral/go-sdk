@@ -32,11 +32,11 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"go.temporal.io/api/serviceerror"
+	"github.com/spiral/go-api/serviceerror"
 	"google.golang.org/grpc"
 
-	"go.temporal.io/api/workflowservice/v1"
-	"go.temporal.io/api/workflowservicemock/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
+	"github.com/spiral/go-api/workflowservicemock/v1"
 )
 
 type activityTestSuite struct {

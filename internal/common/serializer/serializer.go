@@ -29,10 +29,10 @@ import (
 	"fmt"
 
 	"github.com/gogo/protobuf/proto"
-	commonpb "go.temporal.io/api/common/v1"
-	enumspb "go.temporal.io/api/enums/v1"
-	historypb "go.temporal.io/api/history/v1"
-	"go.temporal.io/api/serviceerror"
+	commonpb "github.com/spiral/go-api/common/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	historypb "github.com/spiral/go-api/history/v1"
+	"github.com/spiral/go-api/serviceerror"
 )
 
 type (

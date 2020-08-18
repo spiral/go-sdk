@@ -11,10 +11,10 @@ This doc is intended for contributors to `go-sdk` (hopefully that's you!)
 ## Checking out the code
 
 Make sure the repository is cloned to the preferred location:
-(Note: the path is `go.temporal.io/sdk` instead of github repo)
+(Note: the path is `github.com/spiral/go-sdk` instead of github repo)
 
 ```bash
-go get -u go.temporal.io/sdk
+go get -u github.com/spiral/go-sdk
 ```
 
 ## Licence headers

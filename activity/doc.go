@@ -39,7 +39,7 @@ string parameter, appends a word to it and then returns the result.
 	import (
 		"context"
 
-		"go.temporal.io/sdk/activity"
+		"github.com/spiral/go-sdk/activity"
 	)
 
 	func init() {

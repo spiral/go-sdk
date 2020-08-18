@@ -31,9 +31,9 @@ import (
 	"sync"
 	"time"
 
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/temporal"
-	"go.temporal.io/sdk/worker"
+	"github.com/spiral/go-sdk/activity"
+	"github.com/spiral/go-sdk/temporal"
+	"github.com/spiral/go-sdk/worker"
 )
 
 type Activities struct {

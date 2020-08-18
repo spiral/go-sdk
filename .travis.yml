@@ -7,7 +7,7 @@ directories:
 go:
   - 1.11.x
 
-go_import_path: go.temporal.io/sdk
+go_import_path: github.com/spiral/go-sdk
 addons:
   apt:
     packages:

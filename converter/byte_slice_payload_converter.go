@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"reflect"
 
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 )
 
 // ByteSlicePayloadConverter pass through []byte to Data field in payload.

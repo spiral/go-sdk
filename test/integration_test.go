@@ -36,19 +36,19 @@ import (
 	"github.com/pborman/uuid"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	enumspb "go.temporal.io/api/enums/v1"
-	"go.temporal.io/api/serviceerror"
-	workflowpb "go.temporal.io/api/workflow/v1"
-	"go.temporal.io/api/workflowservice/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	"github.com/spiral/go-api/serviceerror"
+	workflowpb "github.com/spiral/go-api/workflow/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
 	"go.uber.org/goleak"
 
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/interceptors"
-	"go.temporal.io/sdk/internal/common"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/temporal"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/spiral/go-sdk/client"
+	"github.com/spiral/go-sdk/interceptors"
+	"github.com/spiral/go-sdk/internal/common"
+	ilog "github.com/spiral/go-sdk/internal/log"
+	"github.com/spiral/go-sdk/temporal"
+	"github.com/spiral/go-sdk/worker"
+	"github.com/spiral/go-sdk/workflow"
 )
 
 type IntegrationTestSuite struct {
@@ -110,7 +110,7 @@ func (ts *IntegrationTestSuite) TearDownSuite() {
 			ts.FailNow("leaks timed out but no error, should be impossible")
 		case <-time.After(time.Second):
 			// https://github.com/temporalio/go-sdk/issues/51
-			last = goleak.Find(goleak.IgnoreTopFunction("go.temporal.io/sdk/internal.(*coroutineState).initialYield"))
+			last = goleak.Find(goleak.IgnoreTopFunction("github.com/spiral/go-sdk/internal.(*coroutineState).initialYield"))
 			if last == nil {
 				// no leak, done waiting
 				return
@@ -268,7 +268,7 @@ func (ts *IntegrationTestSuite) TestStackTraceQuery() {
 	ts.NotNil(value)
 	var trace string
 	ts.Nil(value.Get(&trace))
-	ts.True(strings.Contains(trace, "go.temporal.io/sdk/test_test.(*Workflows).Basic"), trace)
+	ts.True(strings.Contains(trace, "github.com/spiral/go-sdk/test_test.(*Workflows).Basic"), trace)
 }
 
 func (ts *IntegrationTestSuite) TestConsistentQuery() {

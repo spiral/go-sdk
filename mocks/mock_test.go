@@ -30,10 +30,10 @@ import (
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
-	enumspb "go.temporal.io/api/enums/v1"
-	historypb "go.temporal.io/api/history/v1"
+	enumspb "github.com/spiral/go-api/enums/v1"
+	historypb "github.com/spiral/go-api/history/v1"
 
-	"go.temporal.io/sdk/client"
+	"github.com/spiral/go-sdk/client"
 )
 
 func Test_MockClient(t *testing.T) {

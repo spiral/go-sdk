@@ -27,7 +27,7 @@ package workflow
 import (
 	"time"
 
-	"go.temporal.io/sdk/internal"
+	"github.com/spiral/go-sdk/internal"
 )
 
 type (

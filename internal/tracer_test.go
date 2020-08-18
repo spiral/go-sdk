@@ -32,9 +32,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/uber/jaeger-client-go/config"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	ilog "go.temporal.io/sdk/internal/log"
+	ilog "github.com/spiral/go-sdk/internal/log"
 )
 
 func TestTracingContextPropagator(t *testing.T) {

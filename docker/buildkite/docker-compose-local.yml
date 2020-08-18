@@ -43,7 +43,7 @@ services:
     depends_on:
       - temporal
     volumes:
-      - ../../:/go/src/go.temporal.io/sdk
+      - ../../:/go/src/github.com/spiral/go-sdk
     networks:
       services-network:
         aliases:
@@ -65,7 +65,7 @@ services:
     depends_on:
       - temporal
     volumes:
-      - ../../:/go/src/go.temporal.io/sdk
+      - ../../:/go/src/github.com/spiral/go-sdk
     networks:
       services-network:
         aliases:
@@ -84,7 +84,7 @@ services:
     environment:
       - "GO111MODULE=on"
     volumes:
-      - ../../:/go/src/go.temporal.io/sdk
+      - ../../:/go/src/github.com/spiral/go-sdk
     networks:
       services-network:
         aliases:
@@ -103,7 +103,7 @@ services:
     environment:
       - "GO111MODULE=on"
     volumes:
-      - ../../:/go/src/go.temporal.io/sdk
+      - ../../:/go/src/github.com/spiral/go-sdk
 
 networks:
   services-network:

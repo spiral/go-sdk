@@ -29,9 +29,9 @@ import (
 	"encoding/gob"
 	"fmt"
 
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/spiral/go-sdk/converter"
 )
 
 const (

@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"strings"
 
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 )
 
 // JSONPayloadConverter converts to/from JSON.

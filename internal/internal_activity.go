@@ -35,10 +35,10 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber-go/tally"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/converter"
+	"github.com/spiral/go-sdk/log"
 )
 
 type (

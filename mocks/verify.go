@@ -25,8 +25,8 @@
 package mocks
 
 import (
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/converter"
+	"github.com/spiral/go-sdk/client"
+	"github.com/spiral/go-sdk/converter"
 )
 
 // make sure mocks are in sync with interfaces

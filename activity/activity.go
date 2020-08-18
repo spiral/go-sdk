@@ -29,8 +29,8 @@ import (
 
 	"github.com/uber-go/tally"
 
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/internal"
+	"github.com/spiral/go-sdk/log"
 )
 
 type (

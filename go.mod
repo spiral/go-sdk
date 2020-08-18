@@ -1,4 +1,4 @@
-module go.temporal.io/sdk
+module github.com/spiral/go-sdk
 
 go 1.14
 
@@ -15,12 +15,12 @@ require (
 	github.com/pborman/uuid v1.2.0
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/robfig/cron v1.2.0
+	github.com/spiral/go-api v0.29.0
 	github.com/stretchr/objx v0.2.0 // indirect
 	github.com/stretchr/testify v1.6.1
 	github.com/uber-go/tally v3.3.17+incompatible
 	github.com/uber/jaeger-client-go v2.23.1+incompatible
 	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
-	go.temporal.io/api v0.28.0
 	go.uber.org/atomic v1.6.0
 	go.uber.org/goleak v1.0.0
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect

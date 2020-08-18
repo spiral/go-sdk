@@ -28,14 +28,14 @@ package worker
 import (
 	"context"
 
-	historypb "go.temporal.io/api/history/v1"
-	"go.temporal.io/api/workflowservice/v1"
+	historypb "github.com/spiral/go-api/history/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
 
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/log"
-	"go.temporal.io/sdk/workflow"
+	"github.com/spiral/go-sdk/activity"
+	"github.com/spiral/go-sdk/client"
+	"github.com/spiral/go-sdk/internal"
+	"github.com/spiral/go-sdk/log"
+	"github.com/spiral/go-sdk/workflow"
 )
 
 type (

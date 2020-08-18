@@ -30,9 +30,9 @@ import (
 	"reflect"
 
 	"github.com/gogo/protobuf/proto"
-	commonpb "go.temporal.io/api/common/v1"
+	commonpb "github.com/spiral/go-api/common/v1"
 
-	"go.temporal.io/sdk/internal/common/util"
+	"github.com/spiral/go-sdk/internal/common/util"
 )
 
 // ProtoPayloadConverter converts proto objects to protobuf binary format.

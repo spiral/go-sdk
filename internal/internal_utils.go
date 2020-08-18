@@ -38,7 +38,7 @@ import (
 	"github.com/uber-go/tally"
 	"google.golang.org/grpc/metadata"
 
-	"go.temporal.io/sdk/internal/common/metrics"
+	"github.com/spiral/go-sdk/internal/common/metrics"
 )
 
 const (

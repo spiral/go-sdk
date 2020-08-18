@@ -30,9 +30,9 @@ import (
 	"strconv"
 	"time"
 
-	"go.temporal.io/api/workflowservice/v1"
+	"github.com/spiral/go-api/workflowservice/v1"
 
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 // ** This is for internal stress testing framework **

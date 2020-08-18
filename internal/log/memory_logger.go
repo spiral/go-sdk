@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"strings"
 
-	"go.temporal.io/sdk/log"
+	"github.com/spiral/go-sdk/log"
 )
 
 // MemoryLogger is Logger implementation that stores logs in memory (useful for testing). Use Lines() to get log lines.
